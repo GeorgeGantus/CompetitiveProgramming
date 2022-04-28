@@ -1,4 +1,4 @@
-def BinarySearch(array,x, lst=False):
+def BinarySearch(array, x, lst=False):
     '''
     return the first element in list that is greater  than x or -1 if not found
     '''
@@ -7,7 +7,7 @@ def BinarySearch(array,x, lst=False):
     m = (l+r)//2
     if lst:
         while(l != r):
-            print(m,l,r)
+            print(m, l, r)
             if array[m] <= x:
                 l = m
             else:
@@ -17,9 +17,9 @@ def BinarySearch(array,x, lst=False):
             return l
         else:
             return -1
-            
+
     while(l != r):
-        print(m,l,r)
+        print(m, l, r)
         if array[m] >= x:
             r = m
         else:
@@ -31,3 +31,7 @@ def BinarySearch(array,x, lst=False):
         return -1
 
 
+def verifyPossibility(d, s):
+    if d > len(s):
+        return True
+    postion
